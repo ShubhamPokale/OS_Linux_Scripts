@@ -1,0 +1,140 @@
+1. shell8.sh
+--------------  
+echo "Enter the string"
+read str1;
+str2=$(echo "$str1" | rev)
+if [ $str1 == $str2 ]
+then 
+   echo "Palindrom"
+else 
+   echo "Not a palindrom"
+fi
+
+
+2. shell9.sh
+-------------
+echo "Enter file/directory name"
+read name
+echo "Enter destination"
+read dname
+if [ -f $name ]
+then
+   cp $name $dname/.
+fi
+if [ -d $name ]
+then 
+   cp $name/*.*  $dname/.
+fi
+
+3. shell5.sh
+----------------
+echo "Enter No ::"
+read $no
+if [ $no -gt 0 ]
+then
+  x=1
+  i=1
+  while [ $i -le $no ]
+  do 
+     x=$((x*i))
+     i=$((i+1))
+  done
+  echo $x
+else
+  echo "Negative number"
+fi
+
+
+4. shell6.sh
+--------------
+echo enter the number
+read m
+echo enter the number
+read n
+cnt=0
+while [ $m -le $n ]
+do
+  p=$((m%2))
+  if [ p -eq 0 ]
+  then
+    echo $m
+    cnt=$((cnt+1))
+  fi
+  m=$((m+1))
+done
+echo $cnt
+
+
+5. shell7.sh
+-------------
+echo "Enter the no"
+read no
+i=2
+b=$((no-1))
+flag=1
+while [ $i -le $b ]
+do
+   p=$((no%i))
+   if [ $p == 0 ]
+   then
+     flag=0
+     break
+   fi
+done
+if [ $flag -eq 0 ]
+then
+   echo Not a prime number
+else 
+   echo No is a prime
+fi
+--------------------------------   
+
+6. shell8.sh
+-------------
+for var in $(find . - empty)
+do
+    rm $var;
+done
+
+
+7. shell9.sh
+--------------
+for var in $(find . -type f -size +30c)
+do 
+     mv $var temp/      (temp dir is present in current dir)
+done
+
+ls -l temp
+
+----------------------
+8. shell1.sh
+-------------
+cat $1
+    Note : to run the script ----
+           bash shell1.sh filename
+
+9. shell2.sh
+----------
+cp $1 $2
+   Note : to run the script ----
+          bash shell2.sh filename1 filename2
+          contents of filename1 will be copied to filename2
+ 
+10. shell3.sh
+----------
+cat $1 $2 >> $3
+   Note : to run the script ----
+          bash shell3.sh filename1 filename2 filename3
+          contents of filename1 and filename2 will be copied in filename3.
+
+
+11. shell4.sh
+-----------------
+echo "Enter File Name :: "
+read fname
+echo "No. of lines :: "
+read no
+cat $fname | head -n $no > newfile
+
+Note : to run the script ----
+          bash shell4.sh filename no_of_lines

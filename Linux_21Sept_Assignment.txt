@@ -1,0 +1,59 @@
+1. $ps
+
+2. $ps -e -o ppid,pid,cmd
+
+3.  a. chmod 764 myfile1 
+    b. chmod 644 myfile1
+    c. chmod 777 myfile1
+    d. chmod 745 myfile1
+    e. chmod 664 myfile1
+
+4. shell1.sh
+   ----------
+   cat MoreCountries1
+
+5. shell2.sh
+   ---------
+   echo "Enter the file name"
+   read fname
+   cat $fname
+
+6. shell3.sh
+   ---------
+   echo "Enter file name"
+   read fname
+   cp $fname tempdata
+   cat tempdata
+
+7. shell4.sh
+    ---------
+    ps -eo pid,ppid,cmd,%cpu --sort=%cpu | tail -n 10
+
+
+8. shell5.sh
+    ---------
+    ps -eo pid,ppid,cmd,%cpu --sort=%mem | tail -n 10
+
+
+9. shell6.sh
+   ---------
+   echo "Enter File Name :: "
+   read fname
+   echo "No. of lines :: "
+   read no
+   cat $fname | head -n $no > newfile
+
+
+10. shell7.sh
+    ---------
+   echo "Number of files"
+   find . -type f | wc -l
+   echo "Number of directories"
+   find . -type d | wc -l
+
+
+11. shell8.sh
+    ---------
+    echo "Enter the extenction of file"
+    read ext
+    find . -name "*.$ext" | wc -l 

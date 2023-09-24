@@ -1,0 +1,27 @@
+1. Command to find current day(with Full Name & Half name)
+2. Command to find current month(with Full Name & Half name)
+3. Command to List all files/Directory/
+4. Command to create file.
+5. Create a file with name Country using cat command
+6. Create a file with name MoreCountry using cat command
+7. Copy the contents of Country file to NewCountry
+8. Create file f1 f2 & f3 then remove them.
+9. Display the calendar
+10. Display the calendar for complete year
+11. Display the calendar for previous,current & next month
+12. Command to display your current group.
+13. Command to dsiaply manual of List command.
+14. Command to check current directory.
+15. create file with names Trainers, Student,Admin using cat command.Enter some meaningful data in all three files.
+16. create directory in following way
+a. CDAC/DAC/DAC-Subjects using cat command
+b. CDAC/DBDA/DBDA-Subjects using cat command
+17. command to display list of all files along with hidden files.
+18. create f1,f2,f3 files with .c extensions in pwd. then copy any one file to temp folder.
+19. command to remove file from temp folder.
+20. command to remove temp folder.
+21. Command to display all files with .c extension.
+22. Command to sort list of countries.
+22. Command to dislay last four countries from Country file.
+
+ 
